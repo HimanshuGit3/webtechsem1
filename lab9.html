@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Authentication</title>
+</head>
+<body>
+
+    <h2>User Login</h2>
+
+    Username: <input type="text" id="username"><br><br>
+    Password: <input type="password" id="password"><br><br>
+
+    <button onclick="login()">Login</button>
+
+    <script>
+        function login() {
+            let user = document.getElementById("username").value;
+            let pass = document.getElementById("password").value;
+
+            let correctUser = "Himanshu";
+            let correctPass = "1234";
+
+            if (user === correctUser && pass === correctPass) {
+                alert("Login Successful");
+                window.open("https://www.google.com", "_blank");
+            } else {
+                alert("Invalid Username or Password");
+            }
+        }
+    </script>
+
+</body>
+</html>

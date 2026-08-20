@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Presidency University - Schools</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: skyblu20e;
+            margin: 0;
+            padding: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1e1e1e;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .grid-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .school-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s ease;
+        }
+
+        .school-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.18);
+        }
+
+        /* Smaller vertical size */
+        .school-card img {
+            width: 100%;
+            height: 140px; /* Reduced from 180px */
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 12px 16px;
+        }
+
+        .content h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #222;
+            margin-bottom: 6px;
+        }
+
+        .content p {
+            font-size: 14.5px;
+            color: #555;
+            margin: 0;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .school-link {
+            display: inline-block;
+            padding: 7px 12px;
+            background: #4B79A1;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 13.5px;
+            transition: 0.3s;
+        }
+
+        .school-link:hover {
+            background: #35516A;
+        }
+
+        /* Responsive (mobile) */
+        @media (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Presidency University - Schools</h1>
+
+    <div class="grid-container">
+
+        <div class="school-card">
+            <img src="ppu.jpeg" alt="School of Computer Science">
+            <div class="content">
+                <h2>School of Computer Science</h2>
+                <p>
+                    Focused on AI, programming, algorithms, and modern software engineering.
+                </p>
+                <a class="school-link" href="#" target="_blank">Visit School</a>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <img src="ppu.jpeg" alt="School of Information Science">
+            <div class="content">
+                <h2>School of Information Science</h2>
+                <p>
+                    Specializes in data systems, networking, security, and information technology.
+                </p>
+                <a class="school-link" href="#" target="_blank">Visit School</a>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <img src="ppu.jpeg" alt="School of Management">
+            <div class="content">
+                <h2>School of Management</h2>
+                <p>
+                    Offers programs in finance, marketing, HR, entrepreneurship, and leadership.
+                </p>
+                <a class="school-link" href="#" target="_blank">Visit School</a>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <img src="ppu.jpeg" alt="School of Media Studies">
+            <div class="content">
+                <h2>School of Media Studies</h2>
+                <p>
+                    Covers journalism, digital content, filmmaking, advertising, and media production.
+                </p>
+                <a class="school-link" href="#" target="_blank">Visit School</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+

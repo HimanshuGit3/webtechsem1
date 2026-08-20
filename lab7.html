@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Background Color Change</title>
+</head>
+<body>
+
+    <h2>Background Color Changer</h2>
+    <p>The background color changes every 1 second.</p>
+    <button onclick="startColorChange()">Start Color Change</button>
+
+    <script>
+        let colors = ["red", "blue", "green", "yellow", "purple"];
+        let index = 0;
+
+        function startColorChange() {
+            setInterval(function () {
+                document.body.style.backgroundColor = colors[index];
+                index = (index + 1) % colors.length;
+            }, 1000); // change every 1 second
+        }
+    </script>
+
+</body>
+</html>
+
+
